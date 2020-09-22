@@ -23,7 +23,7 @@ You should have Ruby installed to run this.
 
 👤 **Gabriel Suárez**
 
-- Github: @ginnandjuice(https://github.com/ginnandjuice)
+- Github: [@ginnandjuice](https://github.com/ginnandjuice)
 - Twitter: [@fatbaxxter](https://twitter.com/fatbaxxter)
 - Linkedin: [Gabriel Suárez](https://www.linkedin.com/in/gabriel-su%C3%A1rez-torres-85125a1ab/)
 
