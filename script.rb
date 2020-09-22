@@ -1,40 +1,40 @@
-#bubble_sort
+# frozen_string_literal: true
+
+# bubble_sort
 arr = [5, 4, 3, 2, 1, 0]
 
-def bubbleSort(arr)
-  (arr.length - 1).times do arr.each_with_index do |item, index|
-    if index == arr.length - 1
-      next
-      elsif item > arr[index + 1]
+def bubble_sort(arr)
+  (arr.length - 1).times do
+    arr.each_with_index do |item, index|
+      (next if index == arr.length - 1)
+      if item > arr[index + 1]
         el = arr.slice!(index)
         arr.insert(index + 1, el)
-        end
+      end
     end
   end
-  return arr
+  arr
 end
 
-p bubbleSort(arr)
+p bubble_sort(arr)
 
-#bubble_sort_by
+# bubble_sort_by
 
-arr = ["hi","hello","hey"]
-
+arr = %w[hi hello hey]
 
 def bubble_sort_by(arr)
-  (arr.length - 1).times do arr.each_with_index do |item, index|
-    if index == arr.length - 1
-      next
-      elsif yield(item, arr[index + 1]) > 0
+  (arr.length - 1).times do
+    arr.each_with_index do |item, index|
+      (next if index == arr.length - 1)
+      if yield(item, arr[index + 1]).positive?
         el = arr.slice!(index)
         arr.insert(index + 1, el)
-        end
+      end
     end
   end
-  return p arr
+  p arr
 end
 
-
-bubble_sort_by(arr) do |a, b| 
+bubble_sort_by(arr) do |a, b|
   a.length - b.length
 end
