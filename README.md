@@ -4,7 +4,7 @@
 
 > Simple sorting algorithm built using Ruby.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./screenshot.png)
 
 
 ## Built With
